@@ -31,7 +31,7 @@ def test():
     
     fondo='C:\Users\maxi\Desktop/modelo.PNG' #carga de fondo
     
-    screen = pygame.display.set_mode((800, 700)) 
+    screen = pygame.display.set_mode((800,600)) 
     
     for convert_sprites in CargaImagen.all_sprite:
         convert_sprites.convert_alpha()
@@ -39,7 +39,7 @@ def test():
     pygame.display.set_caption("Juego_Test")#nombre del juego
     clock = pygame.time.Clock()#
     background=pygame.image.load(fondo).convert_alpha()
-    pantalla=pygame.display.set_mode((800, 700))
+    pantalla=pygame.display.set_mode((800,600))
     salir=False
     reloj1=pygame.time.Clock()
     botonini=boton(CargaImagen.conluz,CargaImagen.sinluz,10,200)
