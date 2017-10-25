@@ -1,5 +1,6 @@
 import pygame
 import random
+
 pygame.init()
 comida1_y = 700
 comida1_x = random.randint(0, 400)
