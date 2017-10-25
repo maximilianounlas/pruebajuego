@@ -1,6 +1,7 @@
 import pygame
 import CargaImagen
 import random
+
 class cursor(pygame.Rect):
     def __init__(self):
         pygame.Rect.__init__(self,0,0,1,1)
@@ -23,6 +24,7 @@ class boton(pygame.sprite.Sprite):
         else: self.imagen_actual=self.imagen_normal
         
         pantalla.blit(self.imagen_actual,self.rect)
+
 def test():
     pygame.init()
     comida1_y = 700
@@ -52,6 +54,7 @@ def test():
             if event.type==pygame.MOUSEBUTTONDOWN:
                 if cursor1.colliderect(botonini.rect):
                     juego=True
+#------------------------------JUEGO---------------------------------------------------                    
                     while juego == True:
                         for event in pygame.event.get():
                             if event.type==pygame.QUIT:
@@ -72,6 +75,7 @@ def test():
         
                         pygame.display.flip()
                         pygame.display.update()
+#------------------------------JUEGO---------------------------------------------------
         cursor1.update()
         pantalla.blit(CargaImagen.menu,(0,0))
         botonini.update(pantalla,cursor1)

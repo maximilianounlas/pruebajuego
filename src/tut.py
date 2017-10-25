@@ -1,8 +1,12 @@
 import pygame
 import random
 pygame.init()
-foodimg=pygame.image.load("C:\Users\maxi\Desktop/Running1.png")
+comida1_y = 700
+comida1_x = random.randint(0, 400)
+foodimg=pygame.image.load("imagenes/Running1.png")
+comida1=pygame.image.load("imagenes/manzana.png")
 foodrect=foodimg.get_rect()
+comidarect=comida1.get_rect()
 white = (255,255,255)
 #Game Display
 display_width = 1080
@@ -26,5 +30,17 @@ while running:
                 foodrect.center=(random.randint(5,1060),random.randint(5,700))
                 print "Hi",
                 continue 
+        if foodrect.colliderect(comidarect):
+                print "auch"
+                continue
+        comida1_x
+        comida1_y
+    
+    if comida1_y <= -50:
+            comida1_y = 900
+            comida1_x =random.randint(0,600) 
+    else:
+                comida1_y -= 10
     gameDisplay.blit(foodimg,foodrect)
+    gameDisplay.blit(comida1, (comida1_x, comida1_y),comidarect)
     pygame.display.flip()
