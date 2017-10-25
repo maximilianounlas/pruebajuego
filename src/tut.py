@@ -31,8 +31,8 @@ while running:
                 print "Hi",
                 continue 
         if foodrect.colliderect(comidarect):
-                print "auch"
-                continue
+            print "auch"
+            continue
         comida1_x
         comida1_y
     

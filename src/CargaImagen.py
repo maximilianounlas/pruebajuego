@@ -14,3 +14,4 @@ conluz1=pygame.image.load("imagenes/letra7.png")
 sinluz1=pygame.image.load("imagenes/letra8.png")
 gordo_list=[gordo1,gordo2,gordo3,gordo4]
 all_sprite=[comida1,comida2,gordo1,gordo2,gordo3,gordo4,fondo,menu,conluz,conluz1,sinluz,sinluz1]
+
